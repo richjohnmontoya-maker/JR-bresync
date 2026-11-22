@@ -626,8 +626,8 @@ const InventoryPage = ({ user, onLogout }) => {
                       }}
                     />
                     <input
-                      type="url"
-                      placeholder="Or paste image URL (e.g. https://...)"
+                      type="text"
+                      placeholder="Or paste image URL or path (e.g. https://... or /images/...)"
                       value={editingImage}
                       onChange={(e) => setEditingImage(e.target.value)}
                       className="form-control form-control-sm"
@@ -735,8 +735,8 @@ const InventoryPage = ({ user, onLogout }) => {
                       }}
                     />
                     <input
-                      type="url"
-                      placeholder="Or paste image URL (e.g. https://...)"
+                      type="text"
+                      placeholder="Or paste image URL or path (e.g. https://... or /images/...)"
                       value={addingImage}
                       onChange={(e) => setAddingImage(e.target.value)}
                       className="form-control form-control-sm"

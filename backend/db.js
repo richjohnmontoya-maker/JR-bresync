@@ -1,7 +1,11 @@
 import mysql from "mysql2/promise";
 import dotenv from "dotenv";
+import path from "path";
+import { fileURLToPath } from "url";
 
 dotenv.config();
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+dotenv.config({ path: path.resolve(__dirname, ".env") });
 
 const DEFAULT_CLOUD_DB = "mysql://2xqmJCv16n9tBLT.root:Ef3XarWG7knrqArG@gateway01.ap-northeast-1.prod.aws.tidbcloud.com:4000/test";
 
